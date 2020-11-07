@@ -24,7 +24,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'oc#!p70)#rz26!1s^c9))y3$%&wlr=d!ay-t9qgrwk^@_bga8y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+<<<<<<< HEAD
 DEBUG = False
+=======
+DEBUG = True
+>>>>>>> 0809a3d9a0ba1fe8954ed6a029337f5ee4453172
 
 ALLOWED_HOSTS = []
 
@@ -33,10 +37,14 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'rikusaba1826.pythonanywhere.com',
 =======
     'kazumasa1826.pythonanywhere.com'
 >>>>>>> bcfdfc550db496616bbb14ba95bdcb065ed779e6
+=======
+    'kazumasa1826.pythonanywhere.com'
+>>>>>>> 0809a3d9a0ba1fe8954ed6a029337f5ee4453172
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -148,6 +156,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'kazumasaono0422@gmail.com'
 EMAIL_HOST_PASSWORD = 'egosxvthygrsquss'
 
+<<<<<<< HEAD
 try:
     from .local_settings import *
 except ImportError:
@@ -156,3 +165,7 @@ except ImportError:
 if not DEBUG:
     import django_heroku
     django_heroku.settings(locals())
+=======
+django_heroku.settings(locals())
+
+>>>>>>> 0809a3d9a0ba1fe8954ed6a029337f5ee4453172
